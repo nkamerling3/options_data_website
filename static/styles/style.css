@@ -22,3 +22,15 @@ button {
     padding: 1rem;
     border-radius: 10px;
 }
+
+form {
+    display: block;
+}
+
+.form_block {
+    display: block;
+}
+
+.form_center {
+    text-align: center;
+}

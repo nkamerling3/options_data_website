@@ -8,7 +8,23 @@
     <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
 
 <body>
-    <h1>Options Data Logger</h1>
+    <h1>Options Data Tracking</h1>
+    <form action="/getOptionData" method="POST" class="form_block form_center" enctype="multipart/form-data">
+        <label for="ticker_input" class="form_block">Enter stock tickers below:</label>
+        <textarea id="ticker_input" name="ticker_input" rows="10" cols="50" aria-label="Enter your multiline text here."
+            class="form_block">{{ tickers_inputted }}</textarea>
+        <input type="submit" value="Submit" class="form_block" name="sub_user_input">
+    </form>
+
+
+    <form action="/getOptionData" method="POST" class="form_block form_center" enctype="multipart/form-data">
+        <label for="txt_input" class="form_block">Upload .txt file here:</label>
+        <input type="file" id="txt_input" name="txt_input" accept=".txt" class="form_block">
+        <input type="submit" value="Submit File" class="form_block" name="sub_txt_input">
+    </form>
+
+
+
 </body>
 
 </html>

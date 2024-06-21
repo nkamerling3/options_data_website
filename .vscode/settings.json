@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c0c81310-798b-46ca-8d08-dceee236398f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Options-Data-Tracking",
+    "appService.deploySubpath": "."
+}
